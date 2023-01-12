@@ -1,0 +1,100 @@
+.container-mosaique {
+    @media (min-width: 992px) {
+        padding: 0 4rem;
+    }
+}
+
+.projects {
+    width: 100%;
+    @extend %flex-double-center;
+    display: block;
+    margin-top: 6rem;
+    @media (min-width: 992px) {
+        display: flex;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+    }
+}
+
+.card-project {
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+    background-color: $dark;
+    @media (min-width: 992px) {
+        width: 50%;
+        margin: 0.2rem;
+    }
+    div:last-child {
+        padding: 0 2rem;
+        @media (min-width: 992px) {
+            padding: 0;
+        }
+    }
+}
+
+.image-project {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    @media (min-width: 992px) {
+        height: 800px;
+    }
+    a {
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(35, 33, 33, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        @media (min-width: 992px) {
+            opacity: 0;
+            background-color: rgb(35, 33, 33, 0.85);
+        }
+        div {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            right: 0;
+            opacity: 100%;
+            color: $white;
+            @media (min-width: 992px) {
+                top: 40%;
+            }
+        }
+        p {
+            display: none;
+            @media (min-width: 992px) {
+                display: initial;
+            }
+        }
+    }
+    &:hover {
+        a {
+            opacity: 1;
+            transition: 0.25s ease-in-out;
+        }
+    }
+    h2 {
+        //margin-bottom: 4rem;
+        @media (min-width: 992px) {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+// h2 {
+//     position: absolute;
+//     top: 35%;
+//     left: 0;
+//     right: 0;
+//     // text-align: center;
+//     opacity: 100%;
+//     color: $white;
+//     @media (min-width: 992px) {
+//         top: 40%;
+//     }
+// }
