@@ -42,6 +42,11 @@ body {
     }
 }
 
+.dark-mode {
+    background-color: $dark;
+    color: $white;
+}
+
 ul {
     list-style-type: none;
 }

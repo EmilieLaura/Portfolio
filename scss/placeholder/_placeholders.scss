@@ -90,6 +90,13 @@
     letter-spacing: 0.1rem;
 }
 
+%flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 %flex-double-center {
     display: flex;
     justify-content: center;
